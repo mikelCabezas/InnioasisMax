@@ -1,0 +1,35 @@
+{
+  "name": "innioasis-y1-max",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "prebuild": "expo prebuild --platform android",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/run-tests.cjs",
+    "build:bundle": "npx expo export --platform android --output-dir dist-bundle",
+    "build:apk": "bash scripts/build-y1-apk.sh"
+  },
+  "dependencies": {
+    "expo": "~52.0.0",
+    "expo-linear-gradient": "~14.0.0",
+    "expo-sqlite": "~15.0.0",
+    "expo-file-system": "~18.0.0",
+    "expo-secure-store": "~14.0.0",
+    "expo-battery": "~9.0.0",
+    "expo-network": "~7.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.3",
+    "react-native-reanimated": "~3.16.1",
+    "react-native-svg": "15.8.0",
+    "react-native-qrcode-svg": "^6.3.11",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  }
+}
